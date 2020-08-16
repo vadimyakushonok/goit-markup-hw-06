@@ -208,6 +208,8 @@ img {
 
     border: 1px solid transparent;
     border-radius: 4px;
+
+    height: 50px;
 }
 
 /* Мейн блок */
@@ -524,34 +526,40 @@ img {
     margin-right: 94px;
 }
 
-.mailing-footer-list {
+.mailing-footer-form {
     display: flex;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.mailing-footer-box {
+
+.mailing-footer-input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     margin-right: 12px;
+    padding-left: 16px;    
+
+    background-color: #2F303A;
+    color: var(--accent-color-blu-fone);
 }
 
-.mailing-footer-item {
-    fill: var(--accent-color-blu-fone);
-}
-
-.mailing-footer-item .modal-btn {
+.mailing-footer .modal-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: var(--accent-color-blu-fone);
 }
 
 .send-icon {
     margin-left: 10px;
 }
 
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+    
 /* Портфолио */
 
 .filter {
