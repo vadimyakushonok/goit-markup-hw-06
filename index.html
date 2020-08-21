@@ -409,6 +409,10 @@
             <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
             <div class="modal-form-input-box">
+                <svg class="modal-name-icon" width="12" height="12">
+                    <use href="./images/sprite.svg#icon-modal-name"></use>
+                </svg>
+
                 <input type="text" id="user-name" name="user-name" required class="modal-form-input">
                 <label for="user-name" class="modal-form-label">Имя</label>
             </div>
@@ -426,8 +430,8 @@
     
             <textarea name="user-message" id="user-message" cols="30" rows="10" class="modal-form-message" placeholder="Комментарий"></textarea>
     
-            <label class="">
-                <input type="checkbox" name="" lass="modal-form-checkbox">
+            <label class="checkbox-label">
+                <input type="checkbox" name="policy" value="accept-policy" сlass="modal-form-checkbox">
                 <span class="modal-form-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
             </label>
                 
