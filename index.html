@@ -54,7 +54,7 @@
             <div class="container">
                 <h1 class="main-title">Эффективные решения <br />
                     для вашего бизнеса</h1>
-               <button class="modal-btn" type="button">Заказать услугу</button>
+               <button data-modal-open class="modal-btn" type="button">Заказать услугу</button>
             </div>
         </section>
 
@@ -402,9 +402,15 @@
 
     </footer>
     
-    <div class="backdrop">
+    <div data-modal class="backdrop is-hidden">
 
         <form action="#" class="modal-form">
+
+            <button data-modal-close class="modal-form-closed-btn" type="button">
+                <svg class="modal-form-closed-svg" width="11" height="11">
+                    <use href="./images/sprite.svg#icon-button-closed"></use>
+                </svg>
+            </button>
 
             <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
@@ -448,20 +454,20 @@
     
             </div>
             
-            <label class="checkbox-label">
+            <label class="modal-form-option-label">
                 <input type="checkbox" name="policy" value="accept-policy" сlass="modal-form-checkbox">
-                <span class="modal-form-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
+                <span class="modal-form-text">Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="#" target="_blance">Условия договора</a></span>
             </label>
                 
-            <button type="submit" class="modal-btn">Отправить</button>
+            <button type="submit" class="modal-form-btn">Отправить</button>
 
-        </form>
-
-      
+        </form>  
 
 
 
     </div>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>
