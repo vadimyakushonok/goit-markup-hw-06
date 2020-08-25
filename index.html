@@ -401,6 +401,8 @@
         </div>
 
     </footer>
+
+    <!--Модальное окно-->
     
     <div data-modal class="backdrop is-hidden">
 
@@ -453,11 +455,18 @@
                 <label for="user-message" class="modal-form-massage-label">Комментарий</label>
     
             </div>
-            
-            <label class="modal-form-option-label">
-                <input type="checkbox" name="policy" value="accept-policy" сlass="modal-form-checkbox">
-                <span class="modal-form-text">Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="#" target="_blance">Условия договора</a></span>
-            </label>
+
+            <label class="checkbox-label">
+                <input class="checkbox-input" type="checkbox" name="checkbox-policy" value="policy" required>
+                
+                <svg class="icon-checkbox" width="16" height="15">
+                    <use href="./images/sprite.svg#icon-icon-check"></use>
+                </svg>
+
+                <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю 
+                    <a class="checkbox-link" href="" target="_blance">Условия договора</a>
+                </span>
+            </label>       
                 
             <button type="submit" class="modal-form-btn">Отправить</button>
 
